@@ -1,0 +1,11 @@
+
+:root {
+  --lvv-primary: #646e57;
+  --lvv-secondary: #d0d3ad;
+}
+
+/* Simple integration test */
+::selection {
+  background: var(--lvv-secondary);
+  color: var(--lvv-primary);
+}
