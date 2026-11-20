@@ -1,0 +1,80 @@
+/* La Vida Verde V2.3: load a verified inline JPEG mask (no external SVG) to fix desktop overlay.
+   Reuse all V2.1 mobile styles, logo, links and accessibility logic unchanged. */
+@import url("https://kseniiaghamry.github.io/lavidaverde-site-code/gateway/v2-1/lvv-v2-1.css?v=2.1");
+@media (min-width:1024px) {
+  /* Use an inline JPEG fragment of the same approved picture *without* the baked-in
+     EN / العربية lettering. All other pixels remain from approved-v2.png. */
+  .lvvg2::before {
+    content:"";
+    display:block;
+    position:absolute;
+    left:83.832335%;
+    top:1.594049%;
+    width:15.568862%;
+    height:11.583422%;
+    z-index:6;
+    pointer-events:none;
+    background:url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQDAwMDAgQDAwMEBAQFBgoGBgUFBgwICQcKDgwPDg4MDQ0PERYTDxAVEQ0NExoTFRcYGRkZDxIbHRsYHRYYGRj/2wBDAQQEBAYFBgsGBgsYEA0QGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBj/wAARCABtAQQDAREAAhEBAxEB/8QAGwABAQEBAAMBAAAAAAAAAAAAAQIAAwQFBgf/xAAsEAACAgECBAUEAgMAAAAAAAAAARExAiFBBFFhcQMSMjSBFCRC8CIjBTOR/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwUG/8QAGBEBAQEBAQAAAAAAAAAAAAAAAAERQTH/2gAMAwEAAhEDEQA/APz9HzT2XHi/asQr0b6FYZWBU9QFAUqKKUAbcB+AGQFUA7UAyFZPUgqdQRSsKdwMEKNClZFWo5lFJkRackVaYFLQCroBCsyjBCQbcoSDmRXDi/bOWUr0jthlkgNTCKQFICsShQGAVzAQGQpkgyKLxiAEgaUBRRUViNFAWuwVUhFSiKpdwOiZRU6DBSASKxUYDTqBtAN5TKuHGY/bNlSvQN/yKy2vIYKdECWClY6KxoDFgXYCqJ0KIMrRRn6gpVsDpiQKBDuAfkFp3DK1RRaDTbAUtiC1YHVUUpRRasgd2QYKCowG+AOvlfIjThxeMcJkGa+cy9TkMiWXRU9SChBSsvRWNEGLAuyhVE6FEGVooz9QU4+pkOLxApAh3APyC0qwytUUUg0dgKWxBaA6qilKKLVkDuyDFVgjP/gGoDy/KYbeLxmL+kzLGa+Xb/m55mmBK6kGkCllsWDqnuIKxoUYoXYCqJ0KIMrRRn6gpx9TIcXiBSBDuAfkFpVhlaoopBo7AUtiC0B1VFKUUWrIH5GDfIwb5KG9AMQedBh0eLxqf0mfYsZr5LLTPLuac0yiYNIwPmGDphnJfErtj6WBiqXYCqJ0KIMrRRn6gpx9TIcXiBSBDuAfkFpVhlaoopBo7AUtiC0B1VFKUUWBgrAYBTAfkI9i0c3R4vGe0z7FjNfG+J/ty7m3MEGFSnTmQKaTBrrhnOgNdFLNCtyRSqAUQKtFG3KrLQgtNQMG86W4IfPjzGDeZTZArJSUWs1FgUs8eZKHzKCqpNSRFpoo6rJaArpiupSKh8wrR1C60dQa0dQaWtCajFHsWjm28bjPaZ9ixK+L8R/35abm3Op837IRvN+yBvN+yBWK8zoDyMcYxkhjpjTKQqiKRBuQgoUKKBkBuUGWwAShEFAKsosgtFRaoNR0xIrohB0wyiwOyaaGrjadSmNp1Bh0CMyUEdRo9naMNPG4tTwefY0V8R4r/vz7mnNEsI0sCsZbA74Yw0B2VBSghVEUiDchBQoUUDIDcoMqQAiUOwgoUKsosgrEqRaoNR1xIq0IKVEHXDJplquqegwaUAygJckQAe0Usy258Svs8+xYlfB+Oo4rNdTbmjTqBWKl6AWsYLB2xpEHRV8koUUKogRBuQFAKKBkBuUGVIARKHYQUKFWUWQViVItUGo64kVaEFKiC8bZodU4ApMi4Rpghio0EHtccehG4nicftPE02ELHwPE+7zUbm3JzSA644w0BUORBeNIC1XyShRQqiBEG5FFECigZAblBlSAESh2EFChVlCrIjpiUi1QajriRVoQUqGC8bZR0ApEorYodiAhkHuscdCOkTxOP2niStgV+ecV73xO5twQrA6LoFVIFICpUEFJlCqIFyIEoVqAogHqAblBlRNAgKAQFFFKwjoloFWlOgWOuKIq0BSoorGwOiYFIlFQA7UKCXsRce9xRlseOp4XOeQH51xfvvEXU24VyVFReIU7kFopikQUuwUyBpgIrHUqrVQQOgABLsqM1oFEQyB3KGAKgC0iC0gOmMDVdEFVvoBS5gWkBaGqpRARSoBGjRJFe/xWplseP7bNdBFfm/G6f5DxO50cL654sC0EKAUFUgKT0IjKyqZCKTCrQGbMjNlg0zZQLcDIlCkA0FUiItPUKuCovEYrqkiKUlIVexUWgLSIqlRdDSIRlqUMshj/2Q==") center/100% 100% no-repeat;
+    -webkit-mask-image:linear-gradient(to right,transparent 0%,black 9%,black 92%,transparent 100%);
+    mask-image:linear-gradient(to right,transparent 0%,black 9%,black 92%,transparent 100%);
+  }
+  /* Interactive text stands on its own—no coloured rectangle, no duplicate.
+     The position follows the original image's language labels. */
+  .lvvg2 .lvvg2__lang-controls{
+    position:absolute!important;
+    left:87.78%!important;
+    top:6.05%!important;
+    right:auto!important;
+    width:8.75%!important;
+    height:4.1%!important;
+    padding:0!important;
+    margin:0!important;
+    display:flex!important;
+    justify-content:center!important;
+    align-items:center!important;
+    gap:7px!important;
+    white-space:nowrap!important;
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+    border-radius:0!important;
+    z-index:7!important;
+  }
+  .lvvg2 .lvvg2__lang-controls .lvvg2__lang {
+    font:400 clamp(14px,1.17vw,20px)/1.2 'Manrope',Arial,sans-serif!important;
+    color:#f3f1df!important;
+    padding:3px 0 4px!important;
+    border:0!important;
+    border-bottom:1px solid transparent!important;
+    background:transparent!important;
+    min-width:0!important;
+    width:auto!important;
+    opacity:1!important;
+    letter-spacing:0!important;
+    text-shadow:none!important;
+    flex:0 0 auto!important;
+    transition:color .18s ease,border-color .18s ease!important;
+  }
+  .lvvg2 .lvvg2__lang-controls .lvvg2__lang-divider{
+    display:inline!important;
+    color:#f3f1df!important;
+    font:400 clamp(14px,1.17vw,20px)/1.2 'Manrope',Arial,sans-serif!important;
+  }
+  .lvvg2 .lvvg2__lang-controls .lvvg2__lang[aria-pressed="true"]{
+    color:#d0d3ad!important;
+    border-bottom-color:#d0d3ad!important;
+  }
+  @media (hover:hover) {
+    .lvvg2 .lvvg2__lang-controls .lvvg2__lang:hover{
+      color:#d0d3ad!important;
+      border-bottom-color:#d0d3ad!important;
+    }
+  }
+  .lvvg2 .lvvg2__lang-controls .lvvg2__lang:focus-visible{
+    outline:2px solid #d0d3ad!important;
+    outline-offset:3px!important;
+  }
+}
+@media (prefers-reduced-motion:reduce){
+  .lvvg2 .lvvg2__lang-controls .lvvg2__lang{transition:none!important}
+}
