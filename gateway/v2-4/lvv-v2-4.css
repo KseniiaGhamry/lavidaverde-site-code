@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&family=Manrope:wght@300;400;500;600&display=swap');
+/* La Vida Verde V2: independently scoped Tilda gateway. */
+.lvvg2,.lvvg2 *{box-sizing:border-box}
+.lvvg2{--lvvg2-olive:#545c4b;--lvvg2-btn:#646e57;--lvvg2-text:#f3f1df;position:relative;width:100vw;margin-inline:calc(50% - 50vw);aspect-ratio:1670/941;overflow:hidden;isolation:isolate;background:var(--lvvg2-olive);color:var(--lvvg2-text);font-family:'Manrope',Arial,sans-serif;line-height:1.4;-webkit-font-smoothing:antialiased}
+.lvvg2__art{display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:fill;pointer-events:none;user-select:none}
+.lvvg2__sr{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.lvvg2__hit{position:absolute;z-index:5;display:block;overflow:hidden;background:transparent!important;border:0!important;border-radius:999px;color:transparent!important;text-decoration:none!important;padding:0;opacity:1;cursor:pointer}
+.lvvg2__hit:hover,.lvvg2__hit:active{background:transparent!important;transform:none!important;box-shadow:none!important}
+.lvvg2__hit:focus-visible{outline:2px solid var(--lvvg2-text)!important;outline-offset:3px}
+.lvvg2__hit--uae{left:8.0%;top:63.1%;width:28.0%;height:6.85%}
+.lvvg2__hit--egypt{left:8.0%;top:70.65%;width:28.0%;height:6.85%}
+.lvvg2__lang-controls{position:absolute;z-index:7;right:4.7%;top:5.35%;width:8.4%;height:4.15%;display:flex;justify-content:space-between;align-items:stretch;gap:5%}
+.lvvg2__lang{flex:1 1 auto;background:transparent!important;color:transparent!important;border:0!important;padding:0!important;font-size:0!important;cursor:pointer;border-radius:2px;min-width:30%}
+.lvvg2__lang:focus-visible{outline:2px solid var(--lvvg2-text)!important}
+.lvvg2__arabic-panel,.lvvg2__mobile{display:none}
+@media(min-width:1024px){
+.lvvg2[data-language='ar'] .lvvg2__arabic-panel{display:block;position:absolute;inset:0 auto 0 0;width:52%;z-index:3;background:linear-gradient(to right,#545c4b 0%,#545c4b 77%,rgba(84,92,75,.95) 83%,rgba(84,92,75,0) 100%);color:var(--lvvg2-text);direction:rtl}
+.lvvg2__arabic-brand{position:absolute;top:6.15%;left:14.3%;font-size:clamp(23px,2.4vw,40px);font-weight:400;direction:ltr;letter-spacing:-.045em;white-space:nowrap}
+.lvvg2__arabic-heading{position:absolute;top:23.6%;left:14.3%;width:65%;margin:0;font-family:Tahoma,Arial,sans-serif;font-size:clamp(28px,2.55vw,44px);line-height:1.27;font-weight:400}
+.lvvg2__arabic-subtitle{position:absolute;top:38.5%;left:14.3%;width:60%;margin:0;font-family:Tahoma,Arial,sans-serif;font-size:clamp(14px,1.23vw,21px);line-height:1.62}
+.lvvg2__arabic-country{position:absolute;left:12.5%;top:55.2%;width:59.8%;height:25%;border:1px solid rgba(247,243,222,.65);border-radius:24px;padding:3% 3%}
+.lvvg2__arabic-country-label{font:500 clamp(13px,1.3vw,22px)/1.4 Tahoma,Arial,sans-serif;margin:0 0 15px}
+.lvvg2__arabic-links{display:grid;gap:10px}
+.lvvg2__arabic-link{min-height:clamp(41px,4.0vw,65px);border-radius:999px;border:1px solid rgba(247,243,222,.87);display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:8px 15px;gap:8px;color:var(--lvvg2-text)!important;text-decoration:none!important;background:rgba(35,43,29,.12);font:400 clamp(12px,1.25vw,21px)/1.3 Tahoma,Arial,sans-serif}
+.lvvg2__arabic-link--uae{background:var(--lvvg2-btn)}
+.lvvg2__arabic-link:hover{background:rgba(84,92,75,.9)}
+.lvvg2__arabic-link:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.lvvg2__arabic-link svg{flex:0 0 auto;width:22px;height:22px;transform:rotate(180deg);fill:none;stroke:currentColor;stroke-width:1.6}
+.lvvg2[data-language='ar'] .lvvg2__hit{display:none}
+}
+@media(max-width:1023.98px){
+.lvvg2{aspect-ratio:auto;min-height:100svh;overflow:visible;margin-bottom:0}
+.lvvg2__art{width:100%;height:100%;object-fit:cover;object-position:100% center}
+.lvvg2::before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(56,64,48,.94),rgba(56,64,48,.76) 64%,rgba(56,64,48,.45)),linear-gradient(0deg,rgba(65,76,55,.92),rgba(65,76,55,.65) 55%,rgba(65,76,55,.55))}
+.lvvg2::after{content:'';position:absolute;inset:0 0 auto;height:158px;z-index:2;pointer-events:none;background:linear-gradient(to bottom,#3c4534 0,#3c4534 105px,rgba(60,69,52,0) 158px)}
+.lvvg2__hit,.lvvg2__lang-controls,.lvvg2__arabic-panel{display:none!important}
+.lvvg2__mobile{display:flex;position:relative;z-index:4;flex-direction:column;min-height:100svh;padding:30px clamp(18px,5vw,42px) 42px;max-width:700px;margin:0 auto}
+.lvvg2__mobile-top{display:flex;align-items:flex-start;justify-content:space-between;gap:15px}
+.lvvg2__mobile-brand{font:400 clamp(26px,5.7vw,37px)/1.15 'Manrope',Arial,sans-serif;letter-spacing:-.055em;white-space:nowrap}
+.lvvg2__mobile-langs{display:flex;align-items:center;gap:5px;margin-top:5px;white-space:nowrap;font-size:clamp(11px,2.8vw,15px)}
+.lvvg2__mobile-langs button{background:none;border:0;padding:4px 0;color:var(--lvvg2-text);font:inherit;cursor:pointer}
+.lvvg2__mobile-langs button[aria-pressed='false']{opacity:.72}
+.lvvg2__mobile-langs button:focus-visible{outline:2px solid #f3f1df}
+.lvvg2__mobile-copy{margin-top:clamp(70px,13vh,135px)}
+.lvvg2__mobile-title{font:400 clamp(48px,9vw,69px)/.98 'Cormorant Garamond',Georgia,serif;letter-spacing:-.023em;margin:0 0 22px;max-width:550px}
+.lvvg2__mobile-description{margin:0;font-size:clamp(15px,2.4vw,19px);font-weight:400;line-height:1.58;max-width:470px}
+.lvvg2__mobile-country{margin-top:clamp(45px,7vh,85px);border:1px solid rgba(247,243,222,.70);border-radius:24px;padding:20px 17px 19px}
+.lvvg2__mobile-prompt{font:500 clamp(18px,3.9vw,23px)/1.35 'Manrope',Arial,sans-serif;margin:0 0 17px}
+.lvvg2__mobile-links{display:flex;flex-direction:column;gap:10px}
+.lvvg2__mobile-link{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:13px 16px;min-height:61px;border:1px solid rgba(247,243,222,.95);border-radius:999px;font:500 clamp(14px,3.4vw,18px)/1.3 'Manrope',Arial,sans-serif;color:var(--lvvg2-text)!important;background:rgba(42,48,35,.3);text-decoration:none!important}
+.lvvg2__mobile-link--uae{background:var(--lvvg2-btn)}
+.lvvg2__mobile-link:hover{background:#545c4b}
+.lvvg2__mobile-link:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.lvvg2__mobile-link svg{width:23px;height:23px;flex:0 0 auto;fill:none;stroke:currentColor;stroke-width:1.75}
+.lvvg2[data-language='ar'] .lvvg2__mobile-copy,.lvvg2[data-language='ar'] .lvvg2__mobile-country{direction:rtl;text-align:right}
+.lvvg2[data-language='ar'] .lvvg2__mobile-title{font:400 clamp(33px,6.3vw,47px)/1.35 Tahoma,Arial,sans-serif;letter-spacing:0}
+.lvvg2[data-language='ar'] .lvvg2__mobile-description,.lvvg2[data-language='ar'] .lvvg2__mobile-link,.lvvg2[data-language='ar'] .lvvg2__mobile-prompt{font-family:Tahoma,Arial,sans-serif}
+.lvvg2[data-language='ar'] .lvvg2__mobile-link svg{transform:rotate(180deg)}
+}
+@media(max-width:380px){.lvvg2__mobile{padding-inline:18px}.lvvg2__mobile-brand{font-size:25px}.lvvg2__mobile-description{font-size:14px}.lvvg2__mobile-link{font-size:13px;padding-inline:12px}}
+@media(prefers-reduced-motion:reduce){.lvvg2 *{scroll-behavior:auto!important;transition:none!important}}
+
+/* -------- V2.1 PATCH: the approved logo and interactive bilingual toggle -------- */
+:root{--lvvg2-lang-highlight:#d0d3ad}
+.lvvg2__mobile-brand,.lvvg2__arabic-brand{
+  color:transparent!important;
+  font-size:0!important;
+  letter-spacing:0!important;
+  background-image:url('https://kseniiaghamry.github.io/lavidaverde-site-code/gateway/v2-1/lvv-wordmark.svg');
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:left center;
+}
+@media(min-width:1024px){
+  .lvvg2__arabic-brand{
+    width:32%;
+    height:5.4%;
+    top:6.15%;
+    left:14.3%;
+  }
+  /* The EN / العربية lettering is baked into the original photo.
+     Cover just that lettering and place accessible real buttons above it.
+     No other part of the approved artwork is changed. */
+  .lvvg2__lang-controls{
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:8px!important;
+    overflow:visible!important;
+    padding:0 2px!important;
+    background:linear-gradient(90deg,#604d32,#705b3c)!important;
+    border-radius:1px;
+  }
+  .lvvg2__lang{
+    color:#f3f1df!important;
+    font:400 clamp(13px,1.2vw,20px)/1.15 'Manrope',Arial,sans-serif!important;
+    opacity:1!important;
+    font-size:clamp(13px,1.2vw,20px)!important;
+    white-space:nowrap;
+    min-width:0!important;
+    flex:0 0 auto!important;
+    padding:3px 0 4px!important;
+    border-bottom:1px solid transparent!important;
+    text-decoration:none!important;
+    transition:color .18s ease,border-color .18s ease!important;
+  }
+  .lvvg2__lang-divider{
+    display:inline-block!important;
+    color:#f3f1df!important;
+    font:400 clamp(13px,1.2vw,20px)/1.15 'Manrope',Arial,sans-serif;
+  }
+  .lvvg2__lang[aria-pressed='true']{
+    color:var(--lvvg2-lang-highlight)!important;
+    border-bottom-color:var(--lvvg2-lang-highlight)!important;
+  }
+  @media(hover:hover){
+    .lvvg2__lang:hover{
+      color:var(--lvvg2-lang-highlight)!important;
+      border-bottom-color:var(--lvvg2-lang-highlight)!important;
+    }
+  }
+}
+@media(max-width:1023.98px){
+  .lvvg2__mobile-brand{
+    display:block;
+    width:clamp(165px,53vw,277px);
+    height:auto;
+    aspect-ratio:651 / 100;
+    flex:0 1 auto;
+    min-width:0;
+  }
+  .lvvg2__mobile-langs{align-items:center!important;margin-top:2px!important}
+  .lvvg2__mobile-langs button{
+    color:#f3f1df!important;
+    opacity:1!important;
+    border-bottom:1px solid transparent!important;
+    padding-bottom:3px!important;
+    transition:color .18s ease,border-color .18s ease!important;
+  }
+  .lvvg2__mobile-langs button[aria-pressed='true']{
+    color:var(--lvvg2-lang-highlight)!important;
+    border-bottom-color:var(--lvvg2-lang-highlight)!important;
+  }
+  @media(hover:hover){
+    .lvvg2__mobile-langs button:hover{
+      color:var(--lvvg2-lang-highlight)!important;
+      border-bottom-color:var(--lvvg2-lang-highlight)!important;
+    }
+  }
+}
+@media(max-width:380px){.lvvg2__mobile-brand{width:clamp(145px,52vw,192px)}}
+@media(prefers-reduced-motion:reduce){
+  .lvvg2__lang,.lvvg2__mobile-langs button{transition:none!important}
+}
+
+
+/* V2.4 — correct source-aligned pixel repair, not a shifted background clone.
+   The WEBP contains transparent pixels everywhere except the original baked
+   glyphs, seamlessly replacing them with inpainted pixels of the approved art.
+   No external SVG dependencies. This is desktop-only. */
+@media(min-width:1024px) {
+  .lvvg2::before {
+    content:""!important;
+    display:block!important;
+    position:absolute!important;
+    left:85.928144%!important; /* 1435 / 1670 */
+    top:5.632306%!important; /* 53 / 941 */
+    width:11.856287%!important; /* 198 / 1670 */
+    height:6.376196%!important; /* 60 / 941 */
+    z-index:6!important;
+    pointer-events:none!important;
+    background-image:url("data:image/webp;base64,UklGRo4FAABXRUJQVlA4WAoAAAAQAAAAxQAAOwAAQUxQSGsEAAABBlrw/6lxm9HEoJytyzAalKTM3CrMnDIzMzMzPgW3zIzqqMwNQ5m5Vbk17YzVnG/ctZUHaf+7pzvprZ3/PyIcuG0bSZ7Di84etdtNppkf4H/RNqOqL1Vh/HPpVKzsSc6sq88l7oBBuf72Hkj9459Tdjt5CVZe2iyUxwP2Sa0Y0Ar3xNl1wgwnaQcMs8HZ+/SFhPtR9LkFuw+pKmNLf9uZPV/a0AHHA/YJAg3ZfYGsFe4Ju+3uJ1nSDlDDgYu8td8TvorR59zrxlnJE6icuS9KGzJpPPZ2Gsxq0CfIbmvcdS6gFeyJ/82vrZSwAwZNXPYVL/yLhYCiz7W8dbJdBoKU+7xT2rgvjYe3+JAxg8eDPgF22ye/1QJoBXsiunt6RcIOkH3K8iDcBGzCZ04ueYaUC0BCSNJ48G8fOWbK2W9DPgF2T7rTFwqtOWK+SN4BuMOAaO7OthQokwBYSfHH5xZ7v0E+KcZNoZVmuzwsjwP1M55s7YXFdr44P588IOW6+5/f/kmQTzBDWnWRUCy2MD+W+aIyQPNf7NyEuntPN4WQKvgvBPmkMY96fr17Qp0yoenGYnQ22/nC97oqHWpVCobnt2FuDZrQ/c1tu5pGnxoyFAkNeGXZzt7xWIzsjGNu+TB10GBafopdFR2NM2/4sAs63TNlUP/GLRspZw7dfYGcLKKcV4/VZsPEU5gXj8XcxzffaxGpRM5hEN85yTJiGZOtbhFQ88snztz7pItxb2frqdfHEoS36CA73992ZtBmWx/Klvs8HotDKvyDIkwjjP57exxmKWMGoAmFjx+831v5wUpkF16/PJYg+Fd3HjR179PZk+zcC5/4LlAZhmlElX362gLMOhkTRfsPv/GNReT+ex+2iLjR7917v7fWb6UN7/0WRdtUA3g3yHKi0wupoegigZChBdEb70nKAbwbZHWiSyJXIKYdqm8urD3drkqy44iYFVBmWm/v/kYmQyvTZjL0Mq3cnKWQGHw3dDOeDSgpoIHQZDlPZRhEx88dAkI/TYbuGdKLUv9OYfDh8x+C9/791QxWHpbF78nKhQpfY5L/8KX3f1cM5Ug4iJgeIxrS/XFJDckk40pd77e8dfr4Ix/5lsvr/f6zXa5k1VoliQZYW2eAIpQ6wX/95leq1NqLe934wWMOWezJtZd8BIg11o1Sw2/FsOTPxrW9iJJY7qN3923oVVwdDKoPVkcVQ7kOFpvyKtZqOOeZ30RJoJb3Xo1rm78fMlcSuveEXSdgWmqSQPmLf7VsomVoK9j6jBVBKRTS6qsPimvLR2JloXUmpqM+DJcivUUHNuiPFJCRtas537GpQ+PaALFW3LH01OppCLR615SpUZ4MaGMRytihCL575JCGqvQ/38iVOt00SsWv4spPvvyVR1EwioD+cnbIaNPIigc1+vJ1yvb70UlX3Hi3G0VB8tFjp0xsSOpItcFaj1CocZsdJ8yOomAUAR3bqsq6Q/dxFvapMeusKAoilRT4snNaWLEI+H/0GwIAVlA4IPwAAACQCgCdASrGADwAPjEYikQiIYgqHhABglpCHABj6YALPwt9gNAYexTL0fH2yLuOU/KGEAZMLnsaJS/Hf14aBDmrJjYT7YFGi0kKckUKnjBLvIWHS0JTcHWIMpXsj4wA/onGczf/Ys5bAvH/i2JJCIPcRd4vCSlRT/JO4JrYxdF4Y13vL1A2ph6+Hf8e/zCZ80nDUaowMCVAB+XitEdkqfiEGVCJuFYS/pZUXD6n3nQl0XEFov5liYCdpLUwKslch0HtPdm8+F4bqLFNV3HAsY+9FMsLCGBuKXq9oc30gvecVoWeairlGNjDgfwzvLOdscNvBmxsRi2fXpSkAAA=")!important;
+    background-size:100% 100%!important;
+    background-position:center!important;
+    background-repeat:no-repeat!important;
+    -webkit-mask-image:none!important;
+    mask-image:none!important;
+    border:0!important;
+  }
+  .lvvg2 .lvvg2__lang-controls {
+    left:87.78%!important;
+    top:6.05%!important;
+    right:auto!important;
+    width:8.75%!important;
+    height:4.1%!important;
+    z-index:7!important;
+    position:absolute!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:7px!important;
+    margin:0!important;
+    padding:0!important;
+    background:transparent!important;
+    box-shadow:none!important;
+    border:0!important;
+    border-radius:0!important;
+    white-space:nowrap!important;
+  }
+  .lvvg2 .lvvg2__lang-controls .lvvg2__lang{
+    font:400 clamp(14px,1.17vw,20px)/1.2 'Manrope',Arial,sans-serif!important;
+    color:#f3f1df!important;
+    border:0!important;
+    border-bottom:1px solid transparent!important;
+    padding:3px 0 4px!important;
+    background:transparent!important;
+    opacity:1!important;
+    width:auto!important;
+    min-width:0!important;
+    flex:0 0 auto!important;
+    transition:color .18s ease,border-color .18s ease!important;
+  }
+  .lvvg2 .lvvg2__lang-controls .lvvg2__lang-divider {
+    display:inline!important;
+    color:#f3f1df!important;
+    font:400 clamp(14px,1.17vw,20px)/1.2 'Manrope',Arial,sans-serif!important;
+  }
+  .lvvg2 .lvvg2__lang-controls .lvvg2__lang[aria-pressed="true"] {
+    color:#d0d3ad!important;
+    border-bottom-color:#d0d3ad!important;
+  }
+  @media(hover:hover) {
+    .lvvg2 .lvvg2__lang-controls .lvvg2__lang:hover {
+      color:#d0d3ad!important;
+      border-bottom-color:#d0d3ad!important;
+    }
+  }
+}
+@media(prefers-reduced-motion:reduce){.lvvg2 .lvvg2__lang-controls .lvvg2__lang{transition:none!important}}
