@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500&display=swap');
+.lvvg3,.lvvg3 *{box-sizing:border-box}
+.lvvg3{--lvv-deep:#545c4b;--lvv-olive:#646e57;--lvv-cream:#f3f1df;--lvv-selected:#d0d3ad;position:relative;isolation:isolate;width:100vw;margin-inline:calc(50% - 50vw);min-height:100vh;aspect-ratio:1670/941;overflow:hidden;font-family:'Manrope',Arial,sans-serif;line-height:1.4;color:var(--lvv-cream);-webkit-font-smoothing:antialiased}
+.lvvg3__photo{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;z-index:-1;pointer-events:none}
+.lvvg3__header{position:absolute;top:5.45%;left:7.2%;right:5.2%;display:flex;justify-content:space-between;align-items:center;gap:24px}
+.lvvg3__brand{display:block;width:clamp(210px,17vw,285px);height:auto;object-fit:contain}
+.lvvg3__language{display:flex;gap:9px;align-items:center;white-space:nowrap;font-family:'Manrope',Arial,sans-serif;font-size:clamp(13px,1.25vw,21px);font-weight:400}
+.lvvg3__language button{border:0;border-bottom:1px solid transparent;cursor:pointer;background:none;color:var(--lvv-cream);font:inherit;padding:1px 0 4px;transition:color .18s ease,border-color .18s ease}
+.lvvg3__language button[aria-pressed="true"],.lvvg3__language button:hover{color:var(--lvv-selected);border-bottom-color:var(--lvv-selected)}
+.lvvg3__language button:focus-visible,.lvvg3__country-link:focus-visible{outline:2px solid var(--lvv-selected);outline-offset:3px}
+.lvvg3__content{position:absolute;left:7.35%;top:24.7%;width:32%}
+.lvvg3__heading{margin:0 0 clamp(16px,1.7vw,28px);font:400 clamp(40px,3.6vw,60px)/.99 'Cormorant Garamond','GFS Didot',Georgia,serif;letter-spacing:-.025em;max-width:100%;text-wrap:normal}
+.lvvg3__description{margin:0;font-size:clamp(14px,1.2vw,20px);font-weight:400;line-height:1.46;letter-spacing:-.007em;max-width:393px}
+.lvvg3__country{position:relative;margin-top:clamp(43px,3.8vw,64px);padding:clamp(18px,1.5vw,25px);border:1px solid rgba(243,241,223,.7);border-radius:28px;max-width:520px;background:rgba(84,92,75,.12)}
+.lvvg3__prompt{font:500 clamp(16px,1.4vw,24px)/1.25 'Manrope',Arial,sans-serif;margin:0 0 clamp(16px,1.5vw,24px)}
+.lvvg3__country-link{display:flex;justify-content:space-between;align-items:center;min-height:clamp(44px,3.8vw,65px);padding:11px clamp(12px,1.9vw,30px);gap:7px;margin-top:10px;color:var(--lvv-cream)!important;text-decoration:none!important;border:1px solid rgba(243,241,223,.85);border-radius:999px;background:rgba(31,39,23,.24);font-size:clamp(13px,1.23vw,21px);font-weight:400;line-height:1.25;white-space:nowrap;transition:background-color .18s ease}
+.lvvg3__country-link--primary{background:var(--lvv-olive)}
+.lvvg3__country-link:hover{background:#707b62}
+.lvvg3__country-link svg{width:clamp(19px,1.7vw,28px);height:clamp(19px,1.7vw,28px);flex:0 0 auto;fill:none;stroke:currentColor;stroke-width:1.75}
+.lvvg3[data-lang="ar"] .lvvg3__content{direction:rtl;text-align:right}
+.lvvg3[data-lang="ar"] .lvvg3__heading{font:400 clamp(31px,2.65vw,46px)/1.29 Tahoma,'Noto Sans Arabic',Arial,sans-serif;letter-spacing:0}
+.lvvg3[data-lang="ar"] .lvvg3__description{font-family:Tahoma,'Noto Sans Arabic',Arial,sans-serif;font-size:clamp(15px,1.16vw,20px);line-height:1.65}
+.lvvg3[data-lang="ar"] .lvvg3__country-link{direction:rtl;font-family:Tahoma,'Noto Sans Arabic',Arial,sans-serif;white-space:normal}
+.lvvg3[data-lang="ar"] .lvvg3__country-link svg{transform:rotate(180deg)}
+@media(max-width:1023.98px){
+.lvvg3{aspect-ratio:auto;min-height:100svh;overflow:visible}
+.lvvg3__photo{object-fit:cover;object-position:94% center}
+.lvvg3::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;background:linear-gradient(90deg,rgba(70,80,61,.92),rgba(70,80,61,.73) 60%,rgba(70,80,61,.58)),linear-gradient(0deg,rgba(70,80,61,.9),transparent 78%)}
+.lvvg3__header,.lvvg3__content{position:relative;left:auto;right:auto;top:auto;z-index:1}
+.lvvg3__header{padding:30px clamp(20px,5vw,48px) 0}
+.lvvg3__brand{width:clamp(155px,48vw,255px)}
+.lvvg3__language{font-size:clamp(11px,2.7vw,15px);gap:5px}
+.lvvg3__content{padding:0 clamp(20px,5vw,48px) 38px;width:100%;max-width:690px;margin:clamp(75px,13vh,155px) auto 0}
+.lvvg3__heading{font-size:clamp(44px,10vw,64px);max-width:560px;line-height:1.02;margin-bottom:23px}
+.lvvg3__description{font-size:clamp(15px,3.0vw,19px);max-width:530px;line-height:1.58}
+.lvvg3__country{margin-top:clamp(50px,7vh,80px);max-width:560px;border-radius:23px;padding:20px 18px 18px}
+.lvvg3__prompt{font-size:clamp(18px,3.8vw,23px);margin-bottom:17px}
+.lvvg3__country-link{font-size:clamp(14px,3.3vw,18px);min-height:60px;padding:12px 16px;white-space:normal}
+.lvvg3[data-lang="ar"] .lvvg3__heading{font-size:clamp(29px,7vw,46px);line-height:1.35}
+.lvvg3[data-lang="ar"] .lvvg3__description{font-size:clamp(14px,3vw,18px)}
+}
+@media(max-width:390px){.lvvg3__brand{width:49vw}.lvvg3__content{margin-top:10vh}.lvvg3__country{padding:17px 13px}.lvvg3__country-link{padding-inline:13px}}
+@media(prefers-reduced-motion:reduce){.lvvg3__language button,.lvvg3__country-link{transition:none}}
+/* Approved V3: mobile overlay, same on English and Arabic; base colour #545c4b. */
+@media(max-width:1023.98px){
+.lvvg3::before{background:linear-gradient(180deg,rgba(84,92,75,.85) 0%,rgba(84,92,75,.69) 33%,rgba(84,92,75,.60) 62%,rgba(84,92,75,.73) 100%),linear-gradient(90deg,rgba(84,92,75,.15),transparent 85%)}
+}
